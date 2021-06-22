@@ -19,8 +19,7 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/ruiminXD/testPod.git", :tag => "#{spec.version}" }
 
-   spec.source_files  = "testPod/**/*.{h,m}"
-  spec.public_header_files = "testPod/Class/*.h"
+   spec.ios.vendored_frameworks = '**/testPod.framework'
 
 
 
