@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ruiminXD/testPod.git", :tag => "#{spec.version}" }
 
    spec.source_files  = "testPod/**/*.{h,m}"
+  spec.public_header_files = "testPod/Class/*.h"
 
 
 
