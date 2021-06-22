@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "RMTestPodSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "测试库上传到pod"
   spec.description = "test 这是测试库上传的pod"
 
