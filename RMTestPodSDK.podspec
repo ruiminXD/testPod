@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "RMTestPodSDK"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.2"
   spec.summary      = "测试库上传到pod"
   spec.description = "test 这是测试库上传的pod"
 
@@ -19,11 +19,21 @@ Pod::Spec.new do |spec|
    spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/ruiminXD/testPod.git", :tag => "#{spec.version}" }
 
-   spec.ios.vendored_frameworks = '**/testPod.framework'
+   spec.vendored_frameworks = '**/testPod.framework'
 
 
+  spec.subspec 'AntiAddictionKit' do |s|
+    
+    s.vendored_frameworks = 'AntiAddictionKit/AntiAddictionKit.framework'
 
 
+  end
 
 
 end
+
+
+
+
+
+
